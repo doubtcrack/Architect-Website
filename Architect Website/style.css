@@ -11,6 +11,11 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  --primary-color: rgb(255, 102, 0);
+  --secondary-color: rgb(255, 1, 56);
+}
+
 .spinner-container {
   position: absolute;
   top: 0;
@@ -69,7 +74,7 @@ html {
   width: 0.7rem;
   height: 0.7rem;
   border-radius: 50%;
-  background-color: #c29525;
+  background-color: var(--primary-color);
   margin: -0.4rem 0 0 -0.4rem;
 }
 
@@ -209,7 +214,7 @@ html {
   left: 5rem;
   width: 10rem;
   height: 4rem;
-  background-color: #e2b646;
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,7 +236,7 @@ html {
   content: "";
   position: absolute;
   border-left: 1rem solid transparent;
-  border-right: 1rem solid #e2b646;
+  border-right: 1rem solid var(--secondary-color);
   border-bottom: 1rem solid transparent;
   border-top: 1rem solid transparent;
   top: 50%;
@@ -305,7 +310,7 @@ html {
 .banner button {
   width: 25rem;
   height: 7rem;
-  background-color: #c29525;
+  background-color: var(--primary-color);
   border: none;
   font-family: "Muli", serif;
   font-size: 2rem;
@@ -366,7 +371,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  color: #c29525;
+  color: var(--primary-color);
   width: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -400,7 +405,7 @@ html {
 }
 
 .social-media i:hover {
-  background-color: #c29525;
+  background-color: var(--primary-color);
 }
 
 .about-us {
@@ -427,7 +432,7 @@ html {
 .underline {
   width: 12rem;
   height: 0.3rem;
-  background-color: #c29525;
+  background-color: var(--primary-color);
 }
 
 .services {
@@ -600,7 +605,7 @@ html {
 .card-info button {
   width: 10rem;
   height: 3rem;
-  background-color: #c29525;
+  background-color: var(--primary-color);
   border: none;
   font-family: "Baloo Da 2", serif;
   font-size: 1.4rem;
@@ -620,7 +625,7 @@ html {
 }
 
 .contact-wrapper {
-  width: 60%;
+  width: 100%;
   height: 75rem;
   display: flex;
   box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.5);
@@ -628,8 +633,8 @@ html {
 
 .contact-left {
   width: 35%;
-  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
-    url(images/contact-bg.jpg) center no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(22, 22, 22, 0.3)),
+    url(images/footer.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -711,7 +716,7 @@ html {
 .submit-btn {
   width: 45rem;
   height: 5rem;
-  background-color: #c29525;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   margin-top: 2rem;
@@ -761,7 +766,7 @@ html {
   bottom: 5rem;
   width: 4.5rem;
   height: 4.5rem;
-  background-color: #e2b646;
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
